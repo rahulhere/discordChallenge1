@@ -1,15 +1,30 @@
 // You are more than welcome to read this... lol
 
+let signupButton = document.querySelector(".signup-button");
+signupButton.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  let signupName = document.querySelector("#signup-name");
+  let signupEmail = document.querySelector("#signup-email");
+  let signupPass = document.querySelector("#signup-password");
+  let signupConfirmPass = document.querySelector("#signup-confirm-pass");
+
+  validateInput(signupName);
+  validateInput(signupEmail);
+  validateInput(signupPass);
+  validateInput(signupConfirmPass);
+});
+
 let introButton = document.querySelector(".intro-button");
 introButton.addEventListener("click", () => {
   gsap.to(".intro", {
-    x: "-100%",
+    x: "-100vw",
     duration: 0.5,
   });
   gsap.fromTo(
     ".login",
     {
-      x: "100%",
+      x: "100vw",
     },
     {
       x: "0",
@@ -22,7 +37,7 @@ introButton.addEventListener("click", () => {
 let loginImage = document.querySelector(".login-back-img");
 loginImage.addEventListener("click", () => {
   gsap.to(".login", {
-    x: "100%",
+    x: "100vw",
     duration: 0.5,
   });
   gsap.to(".intro", {
@@ -35,7 +50,7 @@ loginImage.addEventListener("click", () => {
 let signupLink = document.querySelector(".signupLink");
 signupLink.addEventListener("click", () => {
   gsap.to(".login", {
-    x: "-100%",
+    x: "-100vw",
     duration: 0.5,
   });
   gsap.to(".signup", {
@@ -48,7 +63,7 @@ signupLink.addEventListener("click", () => {
 let signinLink = document.querySelector(".signinLink");
 signinLink.addEventListener("click", () => {
   gsap.to(".signup", {
-    x: "100%",
+    x: "100vw",
     duration: 0.5,
   });
   gsap.to(".login", {
@@ -61,7 +76,7 @@ signinLink.addEventListener("click", () => {
 let signupImage = document.querySelector(".signup-back-img");
 signupImage.addEventListener("click", () => {
   gsap.to(".signup", {
-    x: "100%",
+    x: "100vw",
     duration: 0.5,
   });
   gsap.to(".intro", {
@@ -89,19 +104,4 @@ loginButton.addEventListener("click", (event) => {
 
   validateInput(loginName);
   validateInput(loginPass);
-});
-
-let signupButton = document.querySelector(".signup-button");
-signupButton.addEventListener("click", (event) => {
-  event.preventDefault();
-
-  let signupName = document.querySelector("#signup-name");
-  let signupEmail = document.querySelector("#signup-email");
-  let signupPass = document.querySelector("#signup-password");
-  let signupConfirmPass = document.querySelector("#signup-confirm-pass");
-
-  validateInput(signupName);
-  validateInput(signupEmail);
-  validateInput(signupPass);
-  validateInput(signupConfirmPass);
 });

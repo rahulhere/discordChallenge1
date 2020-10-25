@@ -7,6 +7,20 @@ body {
   padding: 0;
   text-align: center;
   color: rgb(39, 38, 38);
+  background: #00fff0;
+
+  scrollbar-width: 2px;
+  scrollbar-color: grey;
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(104, 85, 85);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(175, 175, 243);
+  }
 }
 
 // Intro styles here
@@ -65,7 +79,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding: 2rem 0;
-  transform: translateX(100%);
+  transform: translateX(100vw);
   overflow: auto;
 
   img.login-back-img {
@@ -136,7 +150,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding: 2rem 0;
-  transform: translateX(100%);
+  transform: translateX(100vw);
   overflow: auto;
 
   img.signup-back-img {
@@ -228,4 +242,15 @@ form {
 .wrong-input {
   border-color: red;
   background-color: rgb(231, 186, 178);
+}
+
+@media (min-width: 600px) {
+  .login {
+    width: 600px;
+    left: calc(50vw - 300px);
+  }
+  .signup {
+    width: 600px;
+    left: calc(50vw - 300px);
+  }
 }

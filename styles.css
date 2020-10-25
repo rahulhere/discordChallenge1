@@ -7,6 +7,19 @@ body {
   padding: 0;
   text-align: center;
   color: #272626;
+  background: #00fff0;
+  scrollbar-width: 2px;
+  scrollbar-color: grey;
+}
+body ::-webkit-scrollbar {
+  width: 3px;
+}
+body ::-webkit-scrollbar-thumb {
+  background: #685555;
+  border-radius: 3px;
+}
+body ::-webkit-scrollbar-track {
+  background: #afaff3;
 }
 
 .intro {
@@ -58,7 +71,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding: 2rem 0;
-  transform: translateX(100%);
+  transform: translateX(100vw);
   overflow: auto;
 }
 .login img.login-back-img {
@@ -118,7 +131,7 @@ body {
   align-items: center;
   font-weight: bold;
   padding: 2rem 0;
-  transform: translateX(100%);
+  transform: translateX(100vw);
   overflow: auto;
 }
 .signup img.signup-back-img {
@@ -197,6 +210,18 @@ form label + input {
 .wrong-input {
   border-color: red;
   background-color: #e7bab2;
+}
+
+@media (min-width: 600px) {
+  .login {
+    width: 600px;
+    left: calc(50vw - 300px);
+  }
+
+  .signup {
+    width: 600px;
+    left: calc(50vw - 300px);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
