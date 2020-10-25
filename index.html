@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="intro">
+      <h1 class="intro-heading">Welcome to our App!</h1>
+      <button class="intro-button">Next</button>
+    </section>
+
+    <section class="login">
+      <img src="back.png" alt="back-button" class="login-back-img" />
+      <h1 class="login-heading">login</h1>
+      <form class="form">
+        <label for="login-name">Username</label>
+        <input
+          type="text"
+          id="login-name"
+          placeholder="Name"
+          autocomplete="off"
+        />
+        <label for="login-pass">Password</label>
+        <input
+          type="password"
+          id="login-pass"
+          autocomplete="off"
+          placeholder="Password"
+        />
+        <button class="login-button">Login</button>
+      </form>
+      <p>
+        Don't have an account.
+        <span class="span-link signupLink">Register Now!</span>
+      </p>
+    </section>
+
+    <section class="signup">
+      <img src="back.png" alt="back-button" class="signup-back-img" />
+      <h1 class="signup-heading">sign - up</h1>
+      <form class="form">
+        <label for="signup-name">Username</label>
+        <input
+          type="text"
+          id="signup-name"
+          placeholder="Name"
+          autocomplete="off"
+        />
+        <label for="signup-email">Password</label>
+        <input
+          type="email"
+          id="signup-email"
+          autocomplete="off"
+          placeholder="Email Address"
+        />
+
+        <label for="signup-password">Password</label>
+        <input
+          type="password"
+          id="signup-password"
+          autocomplete="off"
+          placeholder="Password"
+        />
+        <label for="signup-confirm-pass">Password</label>
+        <input
+          type="password"
+          id="signup-confirm-pass"
+          autocomplete="off"
+          placeholder="Confirm Password"
+        />
+        <button class="signup-button">Sign-Up</button>
+      </form>
+      <p>
+        Have an account already!.
+        <span class="span-link signinLink">Sign In!</span>
+      </p>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

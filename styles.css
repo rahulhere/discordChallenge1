@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #272626;
+}
+
+.intro {
+  background: linear-gradient(45deg, #21fd1c, #00fff0);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  padding: 2rem 0;
+}
+.intro h1.intro-heading {
+  font-size: 3rem;
+  width: 80%;
+  font-family: cursive;
+  margin-top: auto;
+}
+.intro button.intro-button {
+  width: 10rem;
+  min-height: 4.1rem;
+  height: 4.5rem;
+  background-color: transparent;
+  border: 3px solid #272626;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: auto;
+}
+.intro button.intro-button:active, .intro button.intro-button:focus {
+  outline: none;
+  border: 3px solid #272626;
+  color: white;
+  background-color: #272626;
+  font-weight: 400;
+}
+.intro button.intro-button:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.login {
+  background: linear-gradient(45deg, #21fd1c, #00fff0);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  padding: 2rem 0;
+  transform: translateX(100%);
+  overflow: auto;
+}
+.login img.login-back-img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+}
+.login img.login-back-img:hover {
+  transform: scale(1.05, 1.05);
+}
+.login h1.login-heading {
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-family: sans-serif;
+}
+.login button.login-button {
+  width: 100%;
+  height: 3rem;
+  background-color: transparent;
+  border: 3px solid #272626;
+  border-radius: 0.5rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+.login button.login-button:active, .login button.login-button:focus {
+  outline: none;
+  border: 3px solid #272626;
+  color: white;
+  background-color: #272626;
+}
+.login button.login-button:hover {
+  transform: scale(1.05, 1.05);
+}
+.login p {
+  margin-bottom: auto;
+}
+.login p span.span-link {
+  color: #caffbf;
+  text-shadow: 0 0 5px #074207;
+}
+.login p span.span-link:hover {
+  color: #1b3a15;
+}
+
+.signup {
+  background: linear-gradient(45deg, #21fd1c, #00fff0);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  padding: 2rem 0;
+  transform: translateX(100%);
+  overflow: auto;
+}
+.signup img.signup-back-img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+}
+.signup img.signup-back-img:hover {
+  transform: scale(1.05, 1.05);
+}
+.signup h1.signup-heading {
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-family: sans-serif;
+}
+.signup button.signup-button {
+  width: 100%;
+  height: 3rem;
+  background-color: transparent;
+  border: 3px solid #272626;
+  border-radius: 0.5rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+.signup button.signup-button:active, .signup button.signup-button:focus {
+  outline: none;
+  border: 3px solid #272626;
+  color: white;
+  background-color: #272626;
+}
+.signup button.signup-button:hover {
+  transform: scale(1.05, 1.05);
+}
+.signup p {
+  margin-bottom: auto;
+}
+.signup p span.span-link {
+  color: #caffbf;
+  text-shadow: 0 0 5px #074207;
+}
+.signup p span.span-link:hover {
+  color: #1b3a15;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+form label {
+  display: block;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.4rem 0.3rem;
+}
+form input {
+  display: block;
+  outline: none;
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 550;
+  padding: 0 1rem;
+  border-radius: 0.3rem;
+}
+form label + input {
+  margin-bottom: 1.5rem;
+}
+
+.wrong-input {
+  border-color: red;
+  background-color: #e7bab2;
+}
+
+/*# sourceMappingURL=styles.css.map */
